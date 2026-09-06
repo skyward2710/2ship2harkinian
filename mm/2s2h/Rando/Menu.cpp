@@ -420,6 +420,7 @@ static RegisterShipInitFunc refreshMetricsInit(RefreshMetrics, {
                                                                    "gRando.Options.RO_SHUFFLE_TRIFORCE_PIECES",
                                                                    "gRando.Options.RO_SHUFFLE_TYCOON_WALLET",
                                                                    "gRando.Options.RO_SHUFFLE_WONDER_ITEMS",
+                                                                   "gRando.Options.RO_SHUFFLE_DEKU_FLOWERS",
                                                                    "gRando.Options.RO_SKULLTULA_SHUFFLED",
                                                                    "gRando.Options.RO_SKULLTULA_TOKENS_REQUIRED",
                                                                    "gRando.Options.RO_STARTING_CONSUMABLES",
@@ -731,6 +732,8 @@ static void DrawCheckPoolTab() {
     CheckPoolCheckbox("Boss Remains", RO_SHUFFLE_BOSS_REMAINS, RCTYPE_REMAINS,
                       "Defeating each temple boss rewards a shuffled item instead of that boss's remains.");
     CheckPoolCheckbox("Cows", RO_SHUFFLE_COWS, RCTYPE_COW, "Playing Epona's Song to a cow is a check.");
+    CheckPoolCheckbox("Deku Flowers", RO_SHUFFLE_DEKU_FLOWERS, RCTYPE_DEKU_FLOWER,
+                      "Launching out of a deku flower is a check.");
     UIWidgets::EndCard();
 
     UIWidgets::BeginCard("checkPoolCreatures");
