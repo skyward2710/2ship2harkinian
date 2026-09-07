@@ -2682,10 +2682,10 @@ std::map<RandoCheckId, RandoStaticCheck> Checks = {
     RC(RC_ROAD_TO_SOUTHERN_SWAMP_DEKU_FLOWER_PATH_TO_SWAMP_2,            RCTYPE_DEKU_FLOWER,      SCENE_24KEMONOMITI,             FLAG_NONE,                   0x0,                                                                 RI_NONE),
     RC(RC_DEKU_PALACE_BEAN_SIDE_MOVING_PLATFORM_DEKU_FLOWER_2,           RCTYPE_DEKU_FLOWER,      SCENE_22DEKUCITY,               FLAG_NONE,                   0x0,                                                                 RI_NONE),
     RC(RC_DEKU_PALACE_BEAN_SIDE_DEKU_SCRUB_FLOWER_2,                     RCTYPE_DEKU_FLOWER,      SCENE_22DEKUCITY,               FLAG_NONE,                   0x0,                                                                 RI_NONE),
-    RC(RC_MOON_TRAIL_DEKU_ROTATING_PLATFORM_SET_1_DEKU_FLOWER_1,         RCTYPE_DEKU_FLOWER,      SCENE_LAST_DEKU,                FLAG_NONE,                   0x0,                                                                 RI_NONE),
-    RC(RC_MOON_TRAIL_DEKU_ROTATING_PLATFORM_SET_1_DEKU_FLOWER_2,         RCTYPE_DEKU_FLOWER,      SCENE_LAST_DEKU,                FLAG_NONE,                   0x0,                                                                 RI_NONE),
-    RC(RC_MOON_TRAIL_DEKU_ROTATING_PLATFORM_SET_2_GOLD_DEKU_FLOWER,      RCTYPE_DEKU_FLOWER,      SCENE_LAST_DEKU,                FLAG_NONE,                   0x0,                                                                 RI_NONE),
-    RC(RC_MOON_TRAIL_DEKU_ROTATING_PLATFORM_SET_2_PINK_DEKU_FLOWER,      RCTYPE_DEKU_FLOWER,      SCENE_LAST_DEKU,                FLAG_NONE,                   0x0,                                                                 RI_NONE),
+    RC(RC_MOON_TRIAL_DEKU_ROTATING_PLATFORM_SET_1_DEKU_FLOWER_1,         RCTYPE_DEKU_FLOWER,      SCENE_LAST_DEKU,                FLAG_NONE,                   0x0,                                                                 RI_NONE),
+    RC(RC_MOON_TRIAL_DEKU_ROTATING_PLATFORM_SET_1_DEKU_FLOWER_2,         RCTYPE_DEKU_FLOWER,      SCENE_LAST_DEKU,                FLAG_NONE,                   0x0,                                                                 RI_NONE),
+    RC(RC_MOON_TRIAL_DEKU_ROTATING_PLATFORM_SET_2_GOLD_DEKU_FLOWER,      RCTYPE_DEKU_FLOWER,      SCENE_LAST_DEKU,                FLAG_NONE,                   0x0,                                                                 RI_NONE),
+    RC(RC_MOON_TRIAL_DEKU_ROTATING_PLATFORM_SET_2_PINK_DEKU_FLOWER,      RCTYPE_DEKU_FLOWER,      SCENE_LAST_DEKU,                FLAG_NONE,                   0x0,                                                                 RI_NONE),
 
     // Beehives //
     RC(RC_GREAT_BAY_COAST_COW_GROTTO_BEEHIVE,                            RCTYPE_BEEHIVE,          SCENE_KAKUSIANA,                FLAG_NONE,                   0x0,                                                                 RI_NONE),

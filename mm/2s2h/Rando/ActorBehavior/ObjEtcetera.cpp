@@ -85,15 +85,15 @@ RandoCheckId IdentifyEtceteraBasedOnParent(Actor* actor) {
         ObjRotlift* lift = (ObjRotlift*)parent;
         if (GetActorListIndex(parent) == 5) {
             if (lift->dekuFlowers[0] == flower) {
-                return RC_MOON_TRAIL_DEKU_ROTATING_PLATFORM_SET_1_DEKU_FLOWER_1;
+                return RC_MOON_TRIAL_DEKU_ROTATING_PLATFORM_SET_1_DEKU_FLOWER_1;
             } else {
-                return RC_MOON_TRAIL_DEKU_ROTATING_PLATFORM_SET_1_DEKU_FLOWER_2;
+                return RC_MOON_TRIAL_DEKU_ROTATING_PLATFORM_SET_1_DEKU_FLOWER_2;
             }
         } else if (GetActorListIndex(parent) == 6) {
             if (lift->dekuFlowers[0] == flower) {
-                return RC_MOON_TRAIL_DEKU_ROTATING_PLATFORM_SET_2_GOLD_DEKU_FLOWER;
+                return RC_MOON_TRIAL_DEKU_ROTATING_PLATFORM_SET_2_GOLD_DEKU_FLOWER;
             } else {
-                return RC_MOON_TRAIL_DEKU_ROTATING_PLATFORM_SET_2_PINK_DEKU_FLOWER;
+                return RC_MOON_TRIAL_DEKU_ROTATING_PLATFORM_SET_2_PINK_DEKU_FLOWER;
             }
         }
     }
@@ -190,7 +190,7 @@ void Rando::ActorBehavior::InitObjEtceteraBehavior() {
             } else {
                 randoCheckId = IdentifyEtceteraBasedOnId(actor);
             }
-            if (!RANDO_SAVE_CHECKS[randoCheckId].cycleObtained && (randoCheckId != RC_UNKNOWN)) {
+            if (((randoCheckId != RC_UNKNOWN)) && (!RANDO_SAVE_CHECKS[randoCheckId].cycleObtained)) {
                 RANDO_SAVE_CHECKS[randoCheckId].eligible = true;
                 actor->draw = ObjEtcetera_DrawAnimated;
             }
