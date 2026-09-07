@@ -122,7 +122,7 @@ void Draw_ObjEtcetera_Animated_Rando(Actor* actor, PlayState* play) {
 }
 
 // Exact copy of the vanilla function to break out of the rando idle -> animated -> idle loop after the check has been
-// collected Animated because the only way to collect the check is to launch out of the flower, which always sets the
+// collected. Animated because the only way to collect the check is to launch out of the flower, which always sets the
 // function to animated
 void ObjEtcetera_DrawAnimated(Actor* actor, PlayState* play) {
     ObjEtcetera* etcetera = (ObjEtcetera*)actor;
@@ -179,7 +179,9 @@ void Rando::ActorBehavior::InitObjEtceteraBehavior() {
         RandoCheckId randoCheckId = RC_UNKNOWN;
         ObjEtcetera* flower = (ObjEtcetera*)actor;
         Player* player = GET_PLAYER(gPlayState);
-        if ((player->stateFlags3 & PLAYER_STATE3_200) && (flower->dyna.actor.xzDistToPlayer < 20.0f)) {
+        // Without the oscillation timer check, the rest of the function fires 10 times per launch
+        if ((player->stateFlags3 & PLAYER_STATE3_200) && (flower->dyna.actor.xzDistToPlayer < 20.0f) &&
+            (flower->oscillationTimer >= 29)) {
             // All flowers spawned after scene init have their params set to 128 - Pink flower with bounce
             if (actor->params == DEKU_FLOWER_PARAMS(DEKU_FLOWER_TYPE_PINK_WITH_INITIAL_BOUNCE)) {
                 randoCheckId = IdentifyEtceteraBasedOnPos(actor);
